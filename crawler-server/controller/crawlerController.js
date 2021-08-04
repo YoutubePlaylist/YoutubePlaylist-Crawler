@@ -12,7 +12,7 @@ module.exports = {
 
 
         const testurl = 'bts'
-        const test = await ytsr('https://www.youtube.com/results?search_query=' + search + '&sp=EgIQAQ%253D%253D', { pages: 2 });
+        const test = await ytsr('https://www.youtube.com/results?search_query=' + search + '&sp=EgIQAQ%253D%253D', { pages: 2, gl: "KR", hl: "ko" });
         res.status(statusCode.OK).send(util.success(statusCode.OK, responseMessage.SEARCH_BANNER_BY_STARRTDATE_SUCCESS, test));
 
         return res;
