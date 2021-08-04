@@ -10,8 +10,9 @@ module.exports = {
         console.log(search);
         const ytsr = require('ytsr');
 
+
         const testurl = 'bts'
-        const test = await ytsr('https://www.youtube.com/results?search_query=' + search + '&sp=EgIQAQ%253D%253D', { pages: 1 });
+        const test = await ytsr('https://www.youtube.com/results?search_query=' + search + '&sp=EgIQAQ%253D%253D', { pages: 2 });
         res.status(statusCode.OK).send(util.success(statusCode.OK, responseMessage.SEARCH_BANNER_BY_STARRTDATE_SUCCESS, test));
 
         return res;
